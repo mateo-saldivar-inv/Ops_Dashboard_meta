@@ -1,0 +1,13 @@
+{
+    "projects": {
+        "safety": {
+            "dashboard_link": "https://lookerstudio.google.com/embed/reporting/f197ca61-2e30-42e0-be0c-1e6281e526ee/page/lEz3D",
+            "button_name": "Meta",
+            "guidelines": {
+                "Annotation SOP": "https://docs.google.com/document/d/e/2PACX-1vQCThbNYN65odB0Bfz8d-ciVYcor0WciyUmgb9ryZpjO1f4llC68pPzian4rFXdBKMimW4wJWolH2AO/pub?embedded=true"
+            },
+            "process_link": "https://app.inv.tech/work",
+            "manticore_hook": "https://app.inv.tech/work"
+        }
+    }
+}

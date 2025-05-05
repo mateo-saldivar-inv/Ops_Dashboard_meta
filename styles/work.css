@@ -1,0 +1,163 @@
+#DBW1-work-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background: #f9f9f9;
+  overflow-y: auto;
+}
+
+#DBW1-work-container {
+  width: 100%;
+  max-width: 100%;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#DBW1-work-form {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.DBW1-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.DBW1-form-group label {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000 !important;
+}
+
+.DBW1-form-group input[type="text"],
+.DBW1-form-group input[type="number"],
+.DBW1-form-group input[type="date"],
+.DBW1-form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 100%;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  height: 40px;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.DBW1-form-group select option:disabled {
+  color: #888 !important;
+  font-style: italic;
+}
+
+.DBW1-form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 100%;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  height: 80px;
+  resize: vertical;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* 🔹 Boolean (Single Checkbox) */
+.DBW1-checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.DBW1-checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000000 !important;
+}
+
+.DBW1-checkbox {
+  transform: scale(1.2);
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* 🔹 Multi-Choice (Checkbox Group) */
+.DBW1-multi-checkbox-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 6px;
+}
+
+.DBW1-multi-checkbox-group .DBW1-checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.DBW1-multi-checkbox-group .DBW1-checkbox-label {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+/* 🔹 Finish Button */
+#DBW1-finish-button {
+  background: #7565BC;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: auto;
+  align-self: center;
+  margin-top: 15px;
+  font-family: Arial, sans-serif;
+}
+
+#DBW1-finish-button:hover {
+  background: #5a4db2;
+}
+
+a[href^="http"].DBW1-link {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a[href^="http"].DBW1-link:hover {
+  text-decoration: underline;
+}

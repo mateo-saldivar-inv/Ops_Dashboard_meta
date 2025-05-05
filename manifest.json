@@ -1,0 +1,74 @@
+{
+  "manifest_version": 3,
+  "name": "Dashboard Extension",
+  "version": "1.0.1",
+  "description": "A Chrome extension to open the MTC dashboard.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://starfleet-1.tail6abcb.ts.net:3000/*",
+    "https://app.inv.tech/*",
+    "https://www.meta.ai/*"
+  ],
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content-scripts/Work/styles-loader.js",
+        "content-scripts/Work/work-events.js",
+        "content-scripts/Work/work-init.js",
+        "content-scripts/config-loader.js",
+        "content-scripts/dom-utils.js",
+        "content-scripts/button-ui.js",
+        "content-scripts/drag-manager.js",
+        "content-scripts/iframe-manager.js",
+        "content-scripts/tab-manager.js",
+        "content-scripts/dashboard/dashboard-layout.js",
+        "content-scripts/dashboard/dashboard-events.js",
+        "content-scripts/dashboard/dashboard-init.js",
+        "content-scripts/Work/FormBuilder/input-text.js",
+        "content-scripts/Work/FormBuilder/input-dropdown.js",
+        "content-scripts/Work/FormBuilder/input-multi-select.js",
+        "content-scripts/Work/FormBuilder/input-checkbox.js",
+        "content-scripts/Work/FormBuilder/input-url.js",
+        "content-scripts/Work/FormBuilder/input-date.js",
+        "content-scripts/Work/FormBuilder/finish-button.js",
+        "content-scripts/Work/FormBuilder/form-builder.js"
+      ],
+      "css": [
+        "styles/styles.css",
+        "styles/work.css"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "config/config.json",
+        "config/form-config.json"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "icon.png"
+  }
+}

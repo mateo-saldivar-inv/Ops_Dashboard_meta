@@ -1,0 +1,106 @@
+{
+    "reviewer_name": "string",
+    "model_version": "string",
+    "test_case_id": "string",
+    "query_text": "string",
+    "expected_response": "string",
+    "actual_response": "string",
+    "evaluation_metric": {
+        "type": "dropdown",
+        "options": [
+            "Accuracy",
+            "Fluency",
+            "Coherence",
+            "Relevance",
+            "Speed",
+            "Bias Detection",
+            "Creativity",
+            "Grammar",
+            "Token Efficiency"
+        ]
+    },
+    "score": "int",
+    "response_time_ms": "int",
+    "token_usage": "int",
+    "latency_category": {
+        "type": "dropdown",
+        "options": [
+            "Fast",
+            "Moderate",
+            "Slow",
+            "Very Slow"
+        ]
+    },
+    "use_case": {
+        "type": "dropdown",
+        "options": [
+            "Customer Support",
+            "Code Generation",
+            "Creative Writing",
+            "Scientific Research",
+            "Legal Analysis",
+            "Medical Advice",
+            "General Chat",
+            "Summarization",
+            "Translation"
+        ]
+    },
+    "input_complexity": {
+        "type": "dropdown",
+        "options": [
+            "Simple",
+            "Moderate",
+            "Complex",
+            "Highly Complex"
+        ]
+    },
+    "benchmark_comparison": {
+        "type": "dropdown",
+        "options": [
+            "Above Average",
+            "Average",
+            "Below Average",
+            "Significantly Below"
+        ]
+    },
+    "hallucination_risk": {
+        "type": "dropdown",
+        "options": [
+            "None",
+            "Low",
+            "Moderate",
+            "High"
+        ]
+    },
+    "temperature_setting": "int",
+    "top_p_setting": "int",
+    "max_tokens_used": "int",
+    "stop_sequence_triggered": "bool",
+    "tags": {
+        "type": "multi-select",
+        "options": [
+            "Verbose",
+            "Concise",
+            "Highly Accurate",
+            "Misinterpreted Query",
+            "Overconfident",
+            "Off-Topic",
+            "Repetitive",
+            "Factually Incorrect"
+        ]
+    },
+    "requires_further_analysis": "bool",
+    "review_notes": "string",
+    "submission_date": "date",
+    "feedback_comments": "string",
+    "suggested_improvements": "string",
+    "experiment_batch_id": "string",
+    "model_temperature": "int",
+    "context_window_size": "int",
+    "token_efficiency_score": "int",
+    "retrieval_success_rate": "int",
+    "error_count": "int",
+    "warnings_issued": "int",
+    "failed_test_cases": "int",
+    "pass_rate_percentage": "int"
+}
